@@ -49,6 +49,10 @@ header {
     display: block;
 }
 
+.asiderbar__content {
+    padding-top: 20px;
+}
+
 .asidebar {
     width: 327px;
     position: absolute;
@@ -396,7 +400,17 @@ footer {
     background: #2D314D;
     display: block;
     margin-bottom: 4px;
+    transition:  all ease 0.5s ;
     display: none;
+}
+.opened-burger .burger:nth-child(2){
+    visibility: hidden;
+    opacity: 0;
+}.opened-burger .burger:nth-child(1){
+    transform: rotate(45deg)
+}.opened-burger .burger:nth-child(3){
+    transform:rotate(-45deg) translate(7px, -7px);
+    /* transform-origin: left; */
 }
 
 @media screen and (max-width:576px) {
