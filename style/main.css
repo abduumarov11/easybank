@@ -405,6 +405,7 @@ footer {
 }
 .opened-burger .burger:nth-child(2){
     visibility: hidden;
+    transition: all ease 0.1s;
     opacity: 0;
 }.opened-burger .burger:nth-child(1){
     transform: rotate(45deg)
